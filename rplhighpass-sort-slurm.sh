@@ -13,7 +13,6 @@
 #SBATCH -e rplhps-slurm.%N.%j.err # STDERR
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
-
 /data/miniconda3/bin/conda init
 source ~/.bashrc
 envarg=`/data/src/PyHipp/envlist.py`
@@ -30,4 +29,3 @@ print(time.localtime());"
 
 conda deactivate 
 /data/src/PyHipp/envlist.py $envarg
-
